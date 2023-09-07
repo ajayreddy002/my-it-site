@@ -1,0 +1,98 @@
+.banner-block {
+    background: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%) !important;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &:after {
+        position: absolute;
+        left: -100px;
+        top: -20%;
+        content: "";
+        height: 550px;
+        width: 550px;
+        background: var(--dark-color);
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0.07;
+    }
+
+    .wave-animation {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+
+        .waves {
+            position: absolute;
+            width: 100%;
+            height: 15vh;
+            min-height: 100px;
+            max-height: 150px;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .banner-area {
+        height: 100%;
+        max-width: 1200px;
+
+        .banner-left {
+            height: auto;
+
+            h2 {
+                font-size: 50px;
+                font-weight: 900;
+                margin-bottom: 25px;
+                line-height: 1.2;
+                color: var(--white-color);
+                font-family: var(--heading-font);
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 32px;
+                margin: 0;
+                font-family: var(--font-default);
+                color: var(--white-color);
+            }
+        }
+
+        .banner-right {
+            height: auto;
+
+            img {
+                max-width: 160%;
+                position: relative;
+                margin-left: -60px;
+            }
+        }
+    }
+
+    .parallax>use {
+        animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+    }
+
+    .parallax>use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+    }
+
+    .parallax>use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+    }
+
+    .parallax>use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+    }
+
+    .parallax>use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+    }
+}

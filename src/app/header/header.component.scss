@@ -1,0 +1,45 @@
+.header-block {
+    .navbar {
+        &.navbar-no-bg {
+            display: block;
+            position: absolute;
+            width: 100%;
+            z-index: 100;
+            box-shadow: 0 0 0;
+            -moz-box-shadow: 0 0 0;
+            -webkit-box-shadow: 0 0 0;
+
+            .container {
+                max-width: 1200px;
+
+                .nav-img-block {
+                    flex-basis: auto;
+                }
+                .navbar-brand {
+                    .img-fluid {
+                        height: 60px;
+                        max-height: 100%;
+                    }
+                }
+                .navbar-collapse {
+                    justify-content: center;
+
+                    .nav-item {
+                        position: relative;
+                        display: inline-block;
+
+                        .nav-link {
+                            padding: 30px 20px;
+                            font-weight: 700;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            font-family: var(--font-default);
+                            color: var(--white-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
