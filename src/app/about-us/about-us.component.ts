@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent {
-
+  socialShareToogle = false;
+  toggleChange(event: any){
+    this.socialShareToogle = event.target.checked
+  }
 }

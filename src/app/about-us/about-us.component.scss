@@ -31,6 +31,7 @@
             border-radius: 10px 10px 10px 10px;
             min-height: 320px;
             margin: 0 15px;
+
             h5 {
                 text-transform: none;
                 font-size: 20px;
@@ -47,10 +48,208 @@
             }
         }
     }
+
     .why-choose {
-        .why-img-block {
-            background-image: url(/assets/zig.png);
-            background-size: contain;
+        background-color: #EDF5FF;
+        padding: 120px 0px 60px 0px;
+
+        .why-choose-content {
+            h2 {
+                color: #5138EE !important;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+
+            h3 {
+                padding: 0px 0px 30px 0px;
+                display: block;
+                font-weight: 900;
+                position: relative;
+                margin-bottom: 0;
+                font-size: 36px;
+            }
+
+            p {
+                text-transform: none;
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .team-mates-section {
+        padding: 60px 0px 90px 0px;
+        background-color: #f8f8f8;
+        .t-section-header {
+            h2 {
+                display: block;
+                font-weight: 900;
+                position: relative;
+                margin-bottom: 0;
+                color: #0D1E50;
+            }
+
+            .s-divider {
+                display: inline-block;
+                width: 50px;
+                height: 2px;
+                background: #5138ee;
+                position: relative;
+                z-index: 1;
+                left: 10px;
+
+                &:before {
+                    position: absolute;
+                    left: -15px;
+                    top: 0;
+                    content: "";
+                    height: 2px;
+                    width: 10px;
+                    background: #5138ee;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                color: #666666;
+                margin-top: 10px;
+                padding: 0 10%;
+            }
+        }
+
+        .team-mates {
+            .team-item {
+                position: relative;
+
+                &:hover {
+                    .team-img {
+                        .t-social {
+                            visibility: visible;
+                            opacity: 1;
+                            bottom: -25px;
+                        }
+                    }
+                }
+
+                .team-img {
+                    position: relative;
+                    padding: 5px;
+                    background: var(--white-color);
+                    border-radius: 8px;
+
+                    img {
+                        height: auto;
+                        max-width: 100%;
+                        border-radius: 8px;
+                    }
+
+                    .t-social {
+                        position: absolute;
+                        right: 40px;
+                        bottom: 0;
+                        transition: all 0.35s ease-in-out;
+                        opacity: 0;
+                        visibility: hidden;
+
+                        [hidden] {
+                            display: none !important;
+                        }
+
+                        .share-toggle:checked~.share-icon:nth-child(3) {
+                            transform: translateY(-70px) rotate(0);
+                        }
+
+                        .share-toggle:checked~.share-icon:nth-child(4) {
+                            transform: translateY(-125px) rotate(0);
+                        }
+
+                        .share-toggle:checked~.share-icon:nth-child(5) {
+                            transform: translateY(-180px) rotate(0);
+                        }
+
+                        .share-toggle:checked~.share-list-btn {
+                            .plus-btn {
+                                transform: rotate(-180deg)
+                            }
+                        }
+
+
+                        .share-list-btn {
+                            position: relative;
+                            z-index: 2;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 45px;
+                            height: 45px;
+                            color: var(--white-color);
+                            background: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%);
+                            border-radius: 10px;
+                            box-shadow: 0px 0px 0px 5px var(--white-color);
+                            cursor: pointer;
+                            transition: 0.3s ease;
+                            transform: rotate(45deg);
+
+                            .plus-btn {
+                                color: var(--white-color);
+                                transform: rotate(45deg);
+                                transition: 0.3s ease;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .share-icon {
+                            position: absolute;
+                            top: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 45px;
+                            height: 45px;
+                            border-radius: 45px;
+                            transform: translateX(0) rotate(180deg);
+                            cursor: pointer;
+                            transition: 0.3s ease-in-out;
+
+                            &.facebook {
+                                color: var(--white-color);
+                                background: #3b5998 none repeat scroll 0 0;
+                            }
+
+                            &.twitter {
+                                background: #1da1f2 none repeat scroll 0 0;
+                                color: var(--white-color);
+                            }
+
+                            &.instagram {
+                                background: #3f729b none repeat scroll 0 0;
+                                color: var(--white-color);
+                            }
+                        }
+                    }
+                }
+
+                .team-info {
+                    padding: 30px;
+                    padding-bottom: 0;
+                    margin-bottom: -5px;
+
+                    h4 {
+                        font-weight: 900;
+                        margin-bottom: 5px;
+                        font-size: 26px;
+                        color: #0D1E50;
+                    }
+
+                    span {
+                        color: #898989;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                        font-size: 18px;
+                    }
+                }
+            }
         }
     }
 }
