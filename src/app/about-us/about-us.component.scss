@@ -1,0 +1,56 @@
+.about-us-block {
+    .about-content {
+        padding: 100px 0;
+
+        .ab-heading-block {
+            text-align: center;
+            margin: 0px 0px 40px 0px;
+
+            .subtitle {
+                color: #0061EA;
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+
+            h3 {
+                color: #0D1E50;
+                margin-bottom: 20px;
+            }
+        }
+
+        .b-shadow {
+            text-align: center;
+        }
+
+        .ab-card {
+            box-shadow: -20px 20px 50px 0px rgba(0, 40.00000000000004, 99.00000000000001, 0.05);
+            font-size: 15px;
+            line-height: 29px;
+            text-align: left;
+            padding: 30px 30px 30px 30px;
+            border-radius: 10px 10px 10px 10px;
+            min-height: 320px;
+            margin: 0 15px;
+            h5 {
+                text-transform: none;
+                font-size: 20px;
+                line-height: 30px;
+                color: #0D1E50;
+                margin: 20px 0;
+            }
+
+            .ab-card-content {
+                font-size: 15px;
+                line-height: 29px;
+                text-align: left;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .why-choose {
+        .why-img-block {
+            background-image: url(/assets/zig.png);
+            background-size: contain;
+        }
+    }
+}

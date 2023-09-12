@@ -1,0 +1,36 @@
+<div class="services-page">
+    <section>
+        <header class="page-header">
+            <div class="container mw-80">
+                <div class="page-title">
+                    <ul class="page-title-elements page-title-center pull-center">
+                        <h1 class="page-title-heading">Who We Are</h1>
+                        <div class="breadcrumbs-wrap">
+                            <li class="breadcrumb-wrap">
+                                <ul id="breadcrumb" class="breadcrumb nav">
+                                    <li><a class="text-decoration-none text-white"
+                                            routerLink="/home"><span>Home</span></a>
+                                        <fa-icon [icon]="['fas', 'angle-right']" class="mx-3"></fa-icon>
+                                    </li>
+                                    <li>Who We Are</li>
+                                </ul>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="services-list">
+        <div class="container">
+            <ul class="service-card">
+                <li *ngFor="let card of serviceList">
+                    <img src="/assets/{{card.img}}" alt="">
+                    <h5>{{card?.title}}</h5>
+                    <p>{{card?.description}}</p>
+                    <button routerLink="{{card.url}}">View More</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
