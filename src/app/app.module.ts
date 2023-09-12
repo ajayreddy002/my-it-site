@@ -10,6 +10,10 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faAngleRight, faArrowRight, faEnvelope, faHome, faMobilePhone, faPhone, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { HomeComponent } from './home/home.component';
 import { HomeBannerComponent } from './home-banner/home-banner.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ServicesComponent } from './services/services.component';
+import { MobileAppComponent } from './mobile-app/mobile-app.component';
+import { WebAppComponent } from './web-app/web-app.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { HomeBannerComponent } from './home-banner/home-banner.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    HomeBannerComponent
+    HomeBannerComponent,
+    AboutUsComponent,
+    ServicesComponent,
+    MobileAppComponent,
+    WebAppComponent
   ],
   imports: [
     BrowserModule,
