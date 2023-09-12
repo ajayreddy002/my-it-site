@@ -119,3 +119,102 @@
         }
     }
 }
+
+
+.solution {
+    font-size: 190px;
+    font-weight: 900;
+    line-height: 210px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url("https://wordpress.zozothemes.com/briddge/wp-content/uploads/sites/2/2022/11/cta-back-1-1.webp");
+}
+
+.box {
+    box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.2);
+
+}
+
+.getIt {
+    font-size: 40px;
+    color: #0B1460;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.me-3 {
+    font-size: 25px;
+}
+
+.carousal-item {
+    background-image: url("https://wordpress.zozothemes.com/briddge/wp-content/uploads/sites/2/2023/07/Scribble-8-1-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+    // background-attachment: fixed;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.carousel-item.active {
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .text99 {
+        font-size: 120px;
+        color: #0061ea;
+        font-family: 'themify';
+    }
+
+    .lorem {
+        font-size: 30px;
+        font-weight: 600;
+        color: #0B1460;
+        line-height: 40px;
+    }
+
+    h5 {
+        color: #0B1460;
+        font-weight: 700;
+    }
+
+    .ceo {
+        color: #60697b;
+        font-size: 15px;
+    }
+}
+
+.carousel-control-next {
+    top: -360px !important;
+    left: 435px !important;
+    opacity: 1 !important;
+}
+
+.carousel-control-prev {
+    top: -447px !important;
+    left: 435px !important;
+    opacity: 1 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 20px;
+    background-color: #0061ea !important;
+}
+
+.carousel-indicators {
+    bottom: -70px !important;
+
+    button {
+        width: 7px !important;
+        height: 7px !important;
+        border-radius: 50% !important;
+        background-color: #0061EA;
+    }
+}
