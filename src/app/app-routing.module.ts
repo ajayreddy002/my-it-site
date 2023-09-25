@@ -10,10 +10,10 @@ const routes: Routes = [
   {
     path: 'home', component: HomeComponent, title: 'Home page'
   },
-  {path: 'about-us', component: AboutUsComponent},
-  {path: 'services', component: ServicesComponent},
-  {path: 'web-app', component: WebAppComponent},
-  {path: 'mobile-app', component: MobileAppComponent},
+  {path: 'about-us', component: AboutUsComponent, title: 'About page'},
+  {path: 'services', component: ServicesComponent, title: 'Services page'},
+  {path: 'web-app', component: WebAppComponent, title: 'web-application page'},
+  {path: 'mobile-app', component: MobileAppComponent, title: 'Mobile-application page'},
   {
     path: '', redirectTo: 'home', pathMatch: 'full'
   }
