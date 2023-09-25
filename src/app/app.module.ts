@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faAngleRight, faArrowRight, faEnvelope, faHome, faMobilePhone, faPhone, faPhoneAlt, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight, faArrowAltCircleRight, faArrowRight, faEnvelope, faHome, faMobilePhone, faPhone, faPhoneAlt, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { HomeComponent } from './home/home.component';
 import { HomeBannerComponent } from './home-banner/home-banner.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -52,7 +52,8 @@ export class AppModule {
       faFacebook,
       faTwitter,
       faInstagram,
-      faFacebookF
+      faFacebookF,
+      faArrowRight
     )
   }
  }

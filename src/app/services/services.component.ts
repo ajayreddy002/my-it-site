@@ -11,38 +11,49 @@ export class ServicesComponent {
     {
       title:'Wed App Development',
       description:'In Varcas Info we build websites and applications according to client requirement.',
-      img:'web-development.png',
-      url:'/web-app'
+      img:'s1.png',
+      url:'/web-app',
+      hoverImg: 's1hover.png',
     },
     {
       title:'Mobile App Development',
       description:'In Varcas Info we build Mobile applications according to client requirement.',
-      img:'mobile-app.jpeg',
-      url:'/mobile-app'
+      img:'mobile-app.png',
+      url:'/mobile-app',
+      hoverImg: 'mobile-app-hover.png',
+      hoverClassName: 'b-bg'
     },
     {
       title:'SaaS Development',
       description:'Convert data noise to intelligent insights for competitive differention quality.',
-      img:'sass-development.jpeg',
-      url:'/web-app'
+      img:'saas.png',
+      url:'/web-app',
+      hoverImg: 'saas-hover.png',
+      hoverClassName: 'y-bg'
     },
     {
       title:'UX/UI Design',
       description:'In Varcas Info we do design the UX/UI according to client requirement.',
-      img:'ux-ui-design.jpeg',
-      url:'/web-app'
+      img:'ux-design-hover.png',
+      url:'/web-app',
+      hoverImg: 'ux-design.png',
+      hoverClassName: 'green-bg'
     },
     {
       title:'Manual Testing',
       description:'In Varcas Info we do Manual test of web and mobile application and will do Regression Testing and write Test cases.',
-      img:'Manual-testing.jpeg',
-      url:'/web-app'
+      img:'manual-test.png',
+      url:'/web-app',
+      hoverImg: 'manual-test-hover.png',
+      hoverClassName: 'pink-bg'
     },
     {
       title:'Automation Testing',
       description:'In Varcas Info we will write automated scripting for Test Senarios.',
-      img:'Automation_Testing.jpeg',
-      url:'/web-app'
+      img:'selenium-blue.svg',
+      url:'/web-app',
+      hoverImg: 'selenium-hover.png',
+      hoverClassName: 'db-bg'
     },
   ]
 }
