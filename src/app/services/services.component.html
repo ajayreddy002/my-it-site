@@ -4,7 +4,7 @@
             <div class="container mw-80">
                 <div class="page-title">
                     <ul class="page-title-elements page-title-center pull-center">
-                        <h1 class="page-title-heading">Who We Are</h1>
+                        <h1 class="page-title-heading">Our Services</h1>
                         <div class="breadcrumbs-wrap">
                             <li class="breadcrumb-wrap">
                                 <ul id="breadcrumb" class="breadcrumb nav">
@@ -12,7 +12,7 @@
                                             routerLink="/home"><span>Home</span></a>
                                         <fa-icon [icon]="['fas', 'angle-right']" class="mx-3"></fa-icon>
                                     </li>
-                                    <li>Who We Are</li>
+                                    <li>Services</li>
                                 </ul>
                             </li>
                         </div>
@@ -22,7 +22,7 @@
         </header>
     </section>
     <section class="services-list">
-        <div class="container">
+        <!-- <div class="container">
             <ul class="service-card">
                 <li *ngFor="let card of serviceList">
                     <img src="/assets/{{card.img}}" alt="">
@@ -31,6 +31,41 @@
                     <button routerLink="{{card.url}}">View More</button>
                 </li>
             </ul>
+        </div> -->
+        <div class="ab-services">
+            <div class="container">
+                <div class="s-header">
+                    <h3>What we offer</h3>
+                    <h1>Awesome services we provide</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 pr-10 pt-5 sm-pt-0 sm-pr-0 sm-pl-0 col-sm-12" *ngFor="let card of serviceList">
+                        <div class="service-item mb-4" [class]="card.hoverClassName">
+                            <div class="s-icon">
+                                <div class="s-img-block">
+                                    <img src="/assets/{{card.img}}" alt="" class="m-img">
+                                    <img src="/assets/{{card.hoverImg}}" alt="" class="h-img">
+                                </div>
+                            </div>
+                            <div class="s-content">
+                                <div class="s-title">
+                                    <h3>
+                                        {{card?.title}}
+                                    </h3>
+                                    <p class="description">
+                                        {{card?.description}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="s-btn-block">
+                                <button routerLink="{{card.url}}">View details
+                                    <fa-icon [icon]="['fas', 'arrow-right']" size="sm" class="mx-2"></fa-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </div>
