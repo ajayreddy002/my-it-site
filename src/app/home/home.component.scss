@@ -122,6 +122,7 @@
 
 // Solutions block
 .solution {
+    background-image: url("/assets/solutions_background.webp");
     font-size: 190px;
     font-weight: 900;
     line-height: 210px;
@@ -133,12 +134,27 @@
     background-clip: text;
     background-position: center center;
     background-attachment: fixed;
-    background-image: url("../../assets/solutions_background.webp");
+    font-family: Playfair Display;
+}
+
+.solution-block {
+    background-image: url('/assets/solutions_block_bg.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    h5 {
+        color: #0061EA;
+        font-weight: 600;
+    }
+
+    span {
+        color: #0061EA;
+    }
 }
 
 .box {
     box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.2);
-
 }
 
 .getIt {
@@ -154,12 +170,23 @@
 
 // carousal block
 .carousal-item {
-    background-image: url("../../assets/carousel_bg.png");
+    background-image: url("/assets/carousel_bg.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center left;
-    // background-attachment: fixed;
+    height: 600px;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-bottom: 150px;
+
+    .carousel {
+        height: 600px;
+    }
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: flex !important;
 }
 
 .carousel-item.active {
@@ -224,10 +251,14 @@
 
 // FAQ 
 .faq-block {
-    background-image: url("../../assets/faq-bg.png");
+    background-image: url("/assets/faq-bg.png");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: contain;
+
+    .row {
+        box-shadow: 0px 10px 60px 0px rgba(38.00000000000001, 103.00000000000009, 255, 0.1);
+    }
 
     .faq-image img {
         height: 600px;
@@ -263,7 +294,7 @@
 
 // Work Process block
 .work-process-block {
-    background-image: url("../../assets/work-process-bg-1.png");
+    background-image: url("/assets/work-process-bg-1.png");
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 6% auto;
@@ -285,7 +316,7 @@
     }
 
     .work-process-bg {
-        background-image: url(https://wordpress.zozothemes.com/briddge/wp-content/uploads/sites/2/2023/07/step-line-1-1.png);
+        background-image: url("/assets/work-process-bg-2.png");
         background-position: -135px 49px;
         background-repeat: no-repeat;
         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
@@ -336,4 +367,26 @@
             background-color: #0061EA;
         }
     }
+}
+
+.our-client-block {
+    .image {
+        position: relative;
+        transition: all 5s ease-in-out;
+    }
+    .image-box {
+            visibility: hidden;
+            height: 355px;
+            width: 405px;
+            padding: 30px;
+            background-color: #000000DE;
+            border: 1px solid #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .image:hover .image-box {
+            visibility: visible;
+        }
+    
 }

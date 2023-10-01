@@ -16,6 +16,11 @@ import { MobileAppComponent } from './mobile-app/mobile-app.component';
 import { WebAppComponent } from './web-app/web-app.component';
 import { faFacebook, faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogComponent } from './dialog/dialog.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -27,14 +32,18 @@ import { FormsModule } from '@angular/forms';
     AboutUsComponent,
     ServicesComponent,
     MobileAppComponent,
-    WebAppComponent
+    WebAppComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -56,4 +65,4 @@ export class AppModule {
       faArrowRight
     )
   }
- }
+}
