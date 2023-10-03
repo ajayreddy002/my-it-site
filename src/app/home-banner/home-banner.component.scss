@@ -96,3 +96,17 @@
         animation-duration: 20s;
     }
 }
+
+@media (max-width:748px) {
+    .banner-block {
+        .banner-area {
+            .banner-left {
+                h2 {
+                    font-size: 25px;
+                    line-height: 25px;
+                    padding-top: 100px;
+                }
+            }
+        }
+    }
+}

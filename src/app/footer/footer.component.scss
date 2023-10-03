@@ -17,6 +17,7 @@
                 max-width: 100%;
                 margin-bottom: 30px;
             }
+
             ::after {
                 content: "";
                 width: 5px;
@@ -46,6 +47,7 @@
                 color: var(--white-color);
                 position: relative;
             }
+
             h4::after {
                 content: "";
                 width: 5px;
@@ -57,6 +59,7 @@
                 left: 35%;
                 border-radius: 50%;
             }
+
             .navbar-nav {
                 li {
                     margin-bottom: 12px;
@@ -82,6 +85,7 @@
                         color: #adb5bd;
                     }
                 }
+
                 li::before {
                     content: "";
                     width: 5px;
@@ -107,6 +111,7 @@
                 font-family: var(--heading-font);
                 position: relative;
             }
+
             h4::after {
                 content: "";
                 width: 5px;
@@ -118,6 +123,7 @@
                 left: 42%;
                 border-radius: 50%;
             }
+
             .address-list {
                 ul {
                     margin: 0;
@@ -128,6 +134,7 @@
                         margin-bottom: 25px;
                         font-size: 15px;
                         font-family: var(--font-default);
+
                         .c-icon-block {
                             .c-icon {
                                 display: inline-block;
@@ -148,12 +155,14 @@
 
                         .c-content {
                             color: #adb5bd;
+
                             span {
                                 a {
                                     color: var(--white-color);
                                     text-decoration: none;
                                 }
                             }
+
                             strong {
                                 display: block;
                                 text-transform: uppercase;
@@ -168,9 +177,42 @@
         }
     }
 }
+
 .copyRight {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+
     ::marker {
         color: #0061ea;
+    }
+}
+
+@media (max-width:1297px) {
+    .footer-block {
+        .footer-items {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width:748px) {
+    .footer-block {
+        .copyRight {
+            p {
+                padding-left: 15px;
+            }
+
+            ul {
+                flex-direction: column;
+            }
+        }
+
+        .footer-items {
+            .footer-about {
+                ::after {
+                    left: 70%;
+                }
+            }
+        }
     }
 }

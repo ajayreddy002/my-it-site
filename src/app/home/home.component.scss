@@ -174,7 +174,6 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center left;
-    height: 600px;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     margin-bottom: 150px;
 
@@ -282,6 +281,10 @@
 
         .faq-accordion {
             .accordion-item {
+                h2.accordion-header {
+                    margin: 0;
+                }
+
                 .accordion-header {
                     button {
                         background-color: #F1F5FD !important;
@@ -369,24 +372,163 @@
     }
 }
 
+// Our Clients Block
 .our-client-block {
+    margin-bottom: 150px;
+
     .image {
         position: relative;
         transition: all 5s ease-in-out;
     }
+
     .image-box {
-            visibility: hidden;
-            height: 355px;
-            width: 405px;
-            padding: 30px;
-            background-color: #000000DE;
-            border: 1px solid #fff;
-            position: absolute;
-            top: 0;
-            left: 0;
+        visibility: hidden;
+        padding: 30px;
+        background-color: #000000DE;
+        border: 1px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .image:hover .image-box {
+        visibility: visible;
+    }
+
+}
+
+@media (max-width:1243px) {
+    .home-page-block {
+        .work-process-block {
+            .work-process-bg {
+                background-position: -300px 30px;
+            }
         }
-        .image:hover .image-box {
-            visibility: visible;
+
+        .what-we-do-block {
+            .what-heading-block {
+                .heading {
+                    font-size: 22px;
+                }
+            }
         }
-    
+    }
+}
+
+@media (max-width:748px) {
+    .solution {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .getIt {
+        font-size: 30px;
+    }
+
+    .box {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    .solution-block {
+        .col-4 {
+            width: 100%;
+        }
+    }
+
+    .work-process-block {
+        padding-top: 40px;
+        .work-process-heading {
+            width: 100% !important;
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+
+        .work-process-steps {
+            flex-direction: column;
+
+            .work-process-step1 {
+                top: 0;
+            }
+
+            .work-process-step1:hover {
+                top: -20px;
+            }
+
+            .work-process-step2 {
+                top: 0;
+            }
+
+            .work-process-step2:hover {
+                top: -20px;
+            }
+
+            .work-process-step3 {
+                top: 0;
+            }
+
+            .work-process-step3:hover {
+                top: -20px;
+            }
+        }
+    }
+
+    .faq-block {
+        .faq-image {
+            padding: 20px !important;
+        }
+
+        .faq-text {
+            width: 100%;
+
+            .faq-content {
+                h1 {
+                    font-size: 28px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+
+    .carousel-item.active {
+        flex-direction: column;
+
+        .text99 {
+            display: none;
+        }
+
+        .lorem {
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 10px !important;
+        }
+    }
+
+    .carousel-item {
+        .carousel {
+            height: auto;
+        }
+
+        img {
+            height: 400px;
+        }
+    }
+
+    .carousal-item {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        left: 94%;
+    }
+
+    .carousel-indicators {
+        bottom: -65px;
+    }
 }
