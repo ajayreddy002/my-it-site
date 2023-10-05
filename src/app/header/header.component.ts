@@ -7,7 +7,7 @@ import { Component, HostListener, Inject } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  public isCollapsed = false;
+  public isCollapsed = true;
   public isScrollTop = true
   constructor(
     @Inject(DOCUMENT) private document: Document
