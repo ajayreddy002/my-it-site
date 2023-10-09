@@ -280,6 +280,7 @@
 }
 
 @media(max-width:450px) {
+
     .getintouch {
         text-align: center;
     }
@@ -291,5 +292,24 @@
 
     .brouchers {
         text-align: center;
+    }
+
+    .web-dev-sec {
+        .row {
+            width: 100%;
+            margin: auto;
+
+            .col-md-8,
+            .col-md-4 {
+                padding: 0;
+
+            }
+
+            .resp-text {
+                h2 {
+                    font-size: 22px;
+                }
+            }
+        }
     }
 }

@@ -73,3 +73,26 @@
         }
     }
 }
+@media (max-width:748px) {
+    .header-block {
+        .navbar {
+            .container {
+                padding: 0 !important;
+                
+                .nav-img-block {
+                    display: flex;
+                    flex-direction: row-reverse;
+
+                    a,
+                    button {
+                        margin-left: 10px;
+                    }
+                }
+
+                .navbar-collapse {
+                    background-color: #74c1d9;
+                }
+            }
+        }
+    }
+}

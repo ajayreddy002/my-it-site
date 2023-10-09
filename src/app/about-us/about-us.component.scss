@@ -253,3 +253,18 @@
         }
     }
 }
+
+@media (max-width:748px) {
+    .about-content {
+        .row {
+            .col-12 {
+                padding: 0;
+                .container {
+                    .row {
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
