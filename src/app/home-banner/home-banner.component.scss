@@ -43,6 +43,13 @@
         .banner-left {
             height: auto;
 
+            .welcome {
+                margin-bottom: 15px;
+                font-weight: 600;
+                font-size: 15px;
+                font-family: var(--font-default);
+            }
+
             h2 {
                 font-size: 50px;
                 font-weight: 900;

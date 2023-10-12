@@ -8,19 +8,18 @@ import { DialogComponent } from '../dialog/dialog.component';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  animal: any;
   name: any;
   constructor(private dialog: MatDialog) {}
   openDialog(a:any) {
     const dialogRef = this.dialog.open(DialogComponent, {
-      data: {name: this.name, animal: this.animal, src:a},
-      width:"500px",
-      height:"500px"
+      data: {name: this.name, src:a},
+      width:"400px",
+      height:"400px"
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      this.animal = result;
+      this.name = result;
     });
   }
 
