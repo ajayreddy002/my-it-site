@@ -20,6 +20,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { SaasAppComponent } from './saas-app/saas-app.component';
+import { UxUiAppComponent } from './ux-ui-app/ux-ui-app.component';
+import { ManualTestingComponent } from './manual-testing/manual-testing.component';
+import { AutomationTestingComponent } from './automation-testing/automation-testing.component';
 
 
 @NgModule({
@@ -33,7 +37,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ServicesComponent,
     MobileAppComponent,
     WebAppComponent,
-    DialogComponent
+    DialogComponent,
+    SaasAppComponent,
+    UxUiAppComponent,
+    ManualTestingComponent,
+    AutomationTestingComponent
   ],
   imports: [
     BrowserModule,
