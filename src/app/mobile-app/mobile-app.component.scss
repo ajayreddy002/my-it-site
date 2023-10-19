@@ -1,0 +1,62 @@
+.rs-breadcrumbs {
+    background: url(/assets/web-banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .breadcrumbs-inner {
+        padding: 140px 0 150px;
+
+        .page-title {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        ul {
+            li {
+                color: #ffffff;
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 400;
+
+                a {
+                    position: relative;
+                    padding-right: 22px;
+                    -webkit-transition: 0.3s;
+                    transition: 0.3s;
+                    color: #ffffff;
+
+                    &::before {
+                        background-color: #fff;
+                        content: "";
+                        height: 15px;
+                        width: 1px;
+                        position: absolute;
+                        right: 9px;
+                        top: 2px;
+                        transform: rotate(26deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.resp-text {
+    margin-top: 30px;
+
+    h2 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    p,ul,ol {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        line-height: 1.8;
+    }
+}
