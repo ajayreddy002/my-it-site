@@ -11,7 +11,9 @@ export class HeaderComponent {
   public isScrollTop = true
   constructor(
     @Inject(DOCUMENT) private document: Document
-  ) { }
+  ) { 
+    window.scrollTo(0,0)
+  }
   @HostListener('window:scroll', [])
   onWindowScroll() {
     if (document.body.scrollTop > 20 ||

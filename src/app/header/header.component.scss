@@ -81,11 +81,13 @@
                 
                 .nav-img-block {
                     display: flex;
-                    flex-direction: row-reverse;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: -webkit-fill-available;
 
                     a,
                     button {
-                        margin-left: 10px;
+                        margin-right: 10px;
                     }
                 }
 

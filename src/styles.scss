@@ -59,6 +59,7 @@ p {
         transform: translateY(-100%)
     }
 }
+
 @keyframes floating-animation {
     0% {
         -webkit-transform: translateY(-30px);
@@ -84,6 +85,7 @@ p {
     background-size: cover;
     overflow: hidden;
     position: relative;
+
     &:before {
         content: "";
         position: absolute;
@@ -118,6 +120,7 @@ p {
         z-index: 9;
         padding-top: 250px;
         padding-bottom: 75px;
+
         &:before {
             content: "";
             position: absolute;
@@ -166,6 +169,7 @@ p {
             list-style: none;
             display: inline-block;
             color: var(--white-color);
+
             .breadcrumb {
                 background: no-repeat;
                 margin: 0;
@@ -176,5 +180,29 @@ p {
         }
     }
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (max-width:748px) {
+    .page-header {
+        &::before {
+            content: none !important;
+        }
+
+        .page-title {
+
+            &::before,
+            &::after {
+                content: none !important;
+            }
+        }
+    }
+}

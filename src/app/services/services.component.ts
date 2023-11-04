@@ -25,9 +25,9 @@ export class ServicesComponent {
     },
     {
       title: 'SaaS Development',
-      description: 'Convert data noise to intelligent insights for competitive differention quality.',
+      description: 'Saas Application Development products will be cost-effective and efficient way to bring your product in the market as well.',
       img: 'saas.png',
-      url: '/web-app',
+      url: '/saas-app',
       hoverImg: 'saas-hover.png',
       hoverClassName: 'y-bg'
     },
@@ -35,7 +35,7 @@ export class ServicesComponent {
       title: 'UX/UI Design',
       description: 'We are considered as the top most company for delivering the extraordinary UI/UX designing services to clients with friendly budget and in-time delivery.',
       img: 'ux-design-hover.png',
-      url: '/web-app',
+      url: '/ux-ui-app',
       hoverImg: 'ux-design.png',
       hoverClassName: 'green-bg'
     },
@@ -43,7 +43,7 @@ export class ServicesComponent {
       title: 'Manual Testing',
       description: 'We are considered as the best Manual Testing Company in US, UK and Canada that delivers the services with best functionality and design.',
       img: 'manual-test.png',
-      url: '/web-app',
+      url: '/manual-testing',
       hoverImg: 'manual-test-hover.png',
       hoverClassName: 'pink-bg'
     },
@@ -51,7 +51,7 @@ export class ServicesComponent {
       title: 'Automation Testing',
       description: 'In Varcas Info we will write automated scripting for Test Senarios.',
       img: 'selenium-blue.svg',
-      url: '/web-app',
+      url: '/automation-testing',
       hoverImg: 'selenium-hover.png',
       hoverClassName: 'db-bg'
     },
