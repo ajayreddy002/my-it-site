@@ -18,6 +18,7 @@ import { faFacebook, faFacebookF, faInstagram, faTwitter } from '@fortawesome/fr
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
+import { NgOptimizedImage } from '@angular/common'
 import { DialogComponent } from './dialog/dialog.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { SaasAppComponent } from './saas-app/saas-app.component';
@@ -51,7 +52,8 @@ import { AutomationTestingComponent } from './automation-testing/automation-test
     FormsModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
